@@ -23,6 +23,11 @@ showNumbers();
 function showNumbers() {
 	let value_a = prompt("Input numer a");
 	let value_b = prompt("Input number b");
-	alert(`Number a = ${value_a} and number b = ${value_b} `);
+	if (value_a % value_b) {
+		alert(`a ko chia het cho b`);
+	} else {
+		alert("a chia het cho b");
+	}
+
 	document.write(`Number a = ${value_a} and number b = ${value_b} `);
 }
